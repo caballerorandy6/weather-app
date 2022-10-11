@@ -1,9 +1,9 @@
 const countryCode = [
-  { unitedStates: "us", name: "United Satates" },
-  { mexico: "mx", name: "Mexico" },
-  { argentina: "ar", name: "Argentina" },
-  { spain: "es", name: "Spain" },
-  { china: "cn", name: "China" },
+  { id: "us", name: "United States" },
+  { id: "mx", name: "Mexico" },
+  { id: "ar", name: "Argentina" },
+  { id: "es", name: "Spain" },
+  { id: "cn", name: "China" },
 ];
 
 export { countryCode };

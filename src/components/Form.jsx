@@ -2,24 +2,11 @@ import React, { useState, useEffect } from "react";
 import Error from "./Error";
 import useCountries from "../hooks/useCountries";
 import { countryCode } from "../data/countryCode";
-import { key } from "../data/api-key";
-import { generateId } from "../helpers/index";
 
-const Form = ({ setResult }) => {
+const Form = ({ setCurrentWeather }) => {
   const [city, setCity] = useState("");
   const [country, Countries] = useCountries("Country", countryCode);
   const [error, setError] = useState(false);
-
-  useEffect(() => {
-    const apiConsult = async () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${key}`;
-
-      const response = await fetch(url);
-      const result = await response.json();
-      console.log(result);
-    };
-    apiConsult();
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +19,7 @@ const Form = ({ setResult }) => {
       return;
     }
 
-    setResult({ city, country });
+    setCurrentWeather({ city, country });
   };
 
   return (
