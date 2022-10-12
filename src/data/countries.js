@@ -1,4 +1,4 @@
-const countryCode = [
+const countries = [
   { id: "us", name: "United States" },
   { id: "mx", name: "Mexico" },
   { id: "ar", name: "Argentina" },
@@ -6,4 +6,4 @@ const countryCode = [
   { id: "cn", name: "China" },
 ];
 
-export { countryCode };
+export { countries };

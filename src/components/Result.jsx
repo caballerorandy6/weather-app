@@ -22,19 +22,19 @@ const Result = ({ currentWeather, result }) => {
       <div>
         <p className="text-white text-xl font-bold">
           Temperature:{" "}
-          <span className="font-normal text-yellow-400">{` ${kelvinToFahrenheit(
+          <span className="font-normal text-yellow-300">{` ${kelvinToFahrenheit(
             temp
           )} fahrenheit degrees`}</span>{" "}
         </p>
         <p className="text-white text-xl font-bold">
-          Temperature:{" "}
-          <span className="font-normal text-yellow-400">{` ${kelvinToFahrenheit(
+          Min Temperature:{" "}
+          <span className="font-normal text-yellow-300">{` ${kelvinToFahrenheit(
             temp_min
           )} fahrenheit degrees`}</span>{" "}
         </p>
         <p className="text-white text-xl font-bold">
-          Temperature:{" "}
-          <span className="font-normal text-yellow-400">{` ${kelvinToFahrenheit(
+          Max Temperature:{" "}
+          <span className="font-normal text-yellow-300">{` ${kelvinToFahrenheit(
             temp_max
           )} fahrenheit degrees`}</span>{" "}
         </p>
