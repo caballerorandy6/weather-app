@@ -12,14 +12,14 @@ const Result = ({ currentWeather, result }) => {
   };
 
   return (
-    <div className="flex flex-col justify-start items-center p-10">
+    <div className=" flex flex-col  justify-start items-center p-10">
       <div>
-        <h1 className="text-white text-3xl mb-4">
+        <h1 className="text-center text-white text-3xl mb-4">
           {city},{" "}
           <span className="text-yellow-500 uppercase font-bold">{country}</span>
         </h1>
       </div>
-      <div>
+      <div className="text-center sm:text-justify">
         <p className="text-white text-xl font-bold">
           Temperature:{" "}
           <span className="font-normal text-yellow-300">{` ${kelvinToFahrenheit(

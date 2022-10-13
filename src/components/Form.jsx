@@ -30,7 +30,7 @@ const Form = ({ setCurrentWeather }) => {
         Add the city, the country and the result will be displayed here.
       </h1>
 
-      <form onSubmit={handleSubmit} className="w-1/4">
+      <form onSubmit={handleSubmit} className="sm:w-1/4">
         <div>
           <label htmlFor="city" className="text-white font-bold block mb-2">
             City
