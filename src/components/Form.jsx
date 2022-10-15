@@ -14,14 +14,15 @@ const Form = ({ setCurrentWeather }) => {
     if ([city, country].includes("")) {
       setError(true);
 
-      // setTimeout(() => {
-      //   setError(false);
-      // }, 2000);
+      setTimeout(() => {
+        setError(false);
+      }, 2000);
 
       return;
     }
-    setError(false);
+    //setError(false);
     setCurrentWeather({ city, country });
+    setCity("");
   };
 
   return (
@@ -40,7 +41,7 @@ const Form = ({ setCurrentWeather }) => {
             value={city}
             id="city"
             type="text"
-            className=" w-full p-1 rounded hover:bg-gray-100 focus:outline-none focus:border-gray-600 italic mb-4"
+            className="text-center w-full p-1 rounded hover:bg-gray-100 focus:outline-none focus:border-gray-600 italic mb-4"
             placeholder="City ..."
             onChange={(e) => setCity(e.target.value)}
           />

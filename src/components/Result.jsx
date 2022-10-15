@@ -2,7 +2,7 @@ import React from "react";
 
 const Result = ({ currentWeather, result }) => {
   const { city, country } = currentWeather;
-  // console.log(city, country);
+  //console.log(city, country);
 
   const { temp, temp_min, temp_max } = result;
   //console.log(temp, temp_min, temp_max);
