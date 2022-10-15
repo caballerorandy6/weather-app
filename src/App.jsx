@@ -29,6 +29,9 @@ function App() {
           const { status, statusText, url } = response;
           throw Error(`${status} ${statusText} in fetch ${url}`);
         }
+        // } else {
+        //   setError(false);
+        // }
 
         console.log(response);
         const apiResult = await response.json();
@@ -41,6 +44,9 @@ function App() {
         console.log(error);
         setError(true);
       });
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
     }
   }, [currentWeather]);
 
